@@ -2,10 +2,39 @@
 <html lang="en">
     <head>
         <title>Playing with Lightbox</title>
+
+        <link type="text/css" rel="stylesheet" href="libs/litebox/assets/css/litebox.css">
+        <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css">
     </head>
     <body>
 
+        <div class="container">
+            <div class="col-md-3">
+                Let's demo some lightbox action!
 
-        
+                <a href="https://github.com/joemottershaw/litebox">Litebox on Github</a>
+            </div>
+            <div class="col-md-6">
+                <a class="btn btn-primary litebox" href="http://vimeo.com/121209359" target="_self">Deploy</a>
+            </div>
+        </div>
+
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="libs/litebox/assets/js/images-loaded.min.js"></script>
+        <script src="libs/litebox/assets/js/litebox.min.js"></script>
+
+        <script>
+            $(function(){
+                $('.litebox').liteBox({
+                    revealSpeed: 400,
+                    background: 'rgba(0,0,0,.8)',
+                    overlayClose: true,
+                    escKey: true,
+                    navKey: true,
+                });
+            });
+        </script>
+
     </body>
 </html>

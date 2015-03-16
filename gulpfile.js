@@ -3,9 +3,9 @@ var gulp            = require('gulp'),
     ;
 
 gulp.task('serve', function(){
-    return gulp.src('src')
+    return gulp.src('src/')
         .pipe(server({
-          directoryListing: true,
-          open: true
+          open: true,
+          port: 8833
       }));
 });
